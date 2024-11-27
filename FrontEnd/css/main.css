@@ -1,0 +1,20 @@
+header {
+    background-color: #f8d30d;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+header a .logo {
+    height: 100px;
+    width: 100px;
+  }
+header nav div div ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+header nav div div ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 105%;
+}
