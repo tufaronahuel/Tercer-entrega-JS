@@ -11,6 +11,7 @@ class Producto {
     }
   }
   
+  
   // Arrays de productos
   const productos = [
     new Producto(1, "./img/sachs.jpg", "ZF3000000144", "Kit de embrague", "FIAT / FIORINO / 1.3 8V FIRE / DESPUES 2006 FIAT / FIORINO / 1.4 EVO (NUEVA) / DESPUES 2014", './img/ZF3000000144.webp', 138559),
