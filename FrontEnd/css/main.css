@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.colorFondo{
+.colorFondo {
   background-color: #f0f0f0;
 }
 
-.carrito{
+.carrito {
   position: fixed;
-  background-color:rgb(0, 251, 75) ;
-  border-radius: 5px ;
+  background-color: rgb(0, 251, 75);
+  border-radius: 5px;
   bottom: 10px;
   padding-right: 5px;
   right: 5vh;
@@ -21,47 +21,46 @@
 }
 
 header {
-    background-color: #f9d804;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-header a .logo {
-    width: 10vh;
-  }
-header nav div div ul li {
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-header nav div div ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 105%;
+  background-color: #f9d804;
+  text-align: center;
+  padding-bottom: 10px;
 }
-.carrito-div{
+header a .logo {
+  width: 10vh;
+}
+header nav div div ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header nav div div ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 105%;
+}
+.carrito-div {
   margin-right: 20%;
 }
 
-.imagen-carrito-boton{
-  background-color:#c9ac02;
-  border-radius:10%;
+.imagen-carrito-boton {
+  background-color: #c9ac02;
+  border-radius: 10%;
 }
 
-.imagen-carrito{
-  width: 3vh;  
+.imagen-carrito {
+  width: 3vh;
 }
- 
-.cards{
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2px;
   margin: 20px 0;
-  
 }
 
 /* Grid para los productos*/
-#root{
+#root {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -97,7 +96,7 @@ header nav div div ul li a {
   margin: 15px 0;
 }
 
-.card-code{
+.card-code {
   background-color: rgb(204, 204, 204);
   margin-left: auto;
   margin-right: auto;
@@ -108,20 +107,20 @@ header nav div div ul li a {
   color: #060000;
   background-color: gainsboro;
   font-weight: bolder;
-  font-size:1.8rem;
+  font-size: 1.8rem;
   text-align: left;
   padding-left: 10%;
   margin: 10px 0;
 }
 
-.card-aplicacion{
+.card-aplicacion {
   font-size: 16px;
   justify-content: center;
-  padding-left: 20px ;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
-.boton{
+.boton {
   background-color: #00ff1e;
   color: rgb(0, 0, 0);
   border: bold;
@@ -131,20 +130,17 @@ header nav div div ul li a {
   font-size: 14px;
   margin-bottom: 15px;
   margin-left: auto;
-  
+
   width: 60%;
   text-align: center;
-  align-self:first baseline;
+  align-self: first baseline;
 }
-
-
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-
- footer {
+footer {
   background-color: #f8d30d;
   text-align: center;
   color: black;
@@ -152,7 +148,7 @@ header nav div div ul li a {
 footer div h2 {
   margin: 5px;
 }
- footer p {
+footer p {
   background-color: black;
   color: whitesmoke;
 }
@@ -197,7 +193,7 @@ footer .itemRedesSociales {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -269,14 +265,13 @@ footer .itemRedesSociales {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color:#060000;
+  background-color: #060000;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
 }
-
 
 @media (max-width: 768px) {
   .cart-container {
@@ -299,4 +294,169 @@ footer .itemRedesSociales {
     margin-bottom: 60px;
   }
 }
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.quantity-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quantity {
+  margin: 0 10px;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout-modal,
+.receipt-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+}
+
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkout-form input,
+#checkout-form select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#checkout-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+//estilos para el modal de recibo
+
+.receipt-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.receipt-modal .modal-content {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.receipt-modal h2 {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+.receipt-modal p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.receipt-modal strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.receipt-modal h3 {
+  color: #4caf50;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.receipt-modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.receipt-modal li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.receipt-modal .total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.receipt-modal .close-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.receipt-modal .close-btn:hover {
+  background-color: #45a049;
+}
+
+
 
