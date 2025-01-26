@@ -242,7 +242,7 @@ let carrito = (() => {
               <p><strong>Forma de pago:</strong> ${payment}</p>
               <h3>Detalle de productos:</h3>
               <ul>
-                  ${carrito.map((item) => `<li>${item.descripcion} - Cantidad: ${item.quantity} - Precio: $${(item.precio * item.quantity).toFixed(2)}</li>`).join("")}
+                   ${carrito.map((item) => `<li>${item.descripcion} - Cantidad: ${item.quantity} - Precio: $${(item.precio * item.quantity).toFixed(2)}</li>`).join("")}
               </ul>
               <p><strong>Total:</strong> $${total.toFixed(2)}</p>
           </div>
@@ -258,5 +258,7 @@ let carrito = (() => {
     // Remove the checkout modal
     document.querySelector(".checkout-modal").remove()
   }
+
+  
   
   
